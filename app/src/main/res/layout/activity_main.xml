@@ -4,162 +4,222 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/seed"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/buttonMulti"
         style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="80dp"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
         android:fadeScrollbars="false"
         android:text="x"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="340dp" />
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerEditText"
+        app:layout_constraintBottom_toTopOf="@id/buttonDivide"
+        app:layout_constraintLeft_toRightOf="@id/button9"/>
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/buttonDivide"
         style="@style/RectButtons"
-        android:layout_width="99dp"
+        android:layout_width="102dp"
         android:layout_height="100dp"
         android:fadeScrollbars="false"
-        android:text="Button"
-        tools:layout_editor_absoluteX="202dp"
-        tools:layout_editor_absoluteY="264dp" />
-
-    <Button
-        android:id="@+id/button18"
-        style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="100dp"
-        android:fadeScrollbars="false"
-        android:text="Button"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="264dp" />
-
-    <Button
-        android:id="@+id/button17"
-        style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="100dp"
-        android:fadeScrollbars="false"
-        android:text="Button"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="264dp" />
-
-    <Button
-        android:id="@+id/button16"
-        style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="100dp"
-        android:fadeScrollbars="false"
-        android:text="Button"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <Button
-        android:id="@+id/button15"
-        style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <Button
-        android:id="@+id/button14"
-        style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="202dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <Button
-        android:id="@+id/button13"
-        style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="80dp"
-        android:text="-"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="420dp" />
-
-    <Button
-        android:id="@+id/button12"
-        style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="457dp" />
-
-    <Button
-        android:id="@+id/button11"
-        style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="457dp" />
-
-    <Button
-        android:id="@+id/button10"
-        style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="100dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="202dp"
-        tools:layout_editor_absoluteY="457dp" />
+        android:text="/"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMulti"
+        app:layout_constraintBottom_toTopOf="@id/buttonSub"
+        app:layout_constraintLeft_toRightOf="@id/button6"/>
 
     <Button
         android:id="@+id/button9"
         style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="80dp"
-        android:text="+"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="500dp" />
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:fadeScrollbars="false"
+        android:text="9"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMulti"
+        app:layout_constraintTop_toBottomOf="@+id/answerEditText"
+        app:layout_constraintBottom_toTopOf="@id/button6"
+        app:layout_constraintLeft_toRightOf="@id/button8"/>
 
     <Button
         android:id="@+id/button8"
         style="@style/RectButtons"
-        android:layout_width="99dp"
+        android:layout_width="102dp"
         android:layout_height="100dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="557dp" />
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:fadeScrollbars="false"
+        android:text="8"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/answerEditText"
+        app:layout_constraintBottom_toTopOf="@id/button5"
+        app:layout_constraintLeft_toRightOf="@id/button7"/>
 
     <Button
         android:id="@+id/button7"
         style="@style/RectButtons"
-        android:layout_width="99dp"
+        android:layout_width="102dp"
         android:layout_height="100dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="557dp" />
+        android:fadeScrollbars="false"
+        android:text="7"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerEditText"
+        app:layout_constraintBottom_toTopOf="@id/button4"/>
 
     <Button
         android:id="@+id/button4"
         style="@style/RectButtons"
-        android:layout_width="99dp"
-        android:layout_height="80dp"
-        android:text="="
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="574dp" />
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="12dp"
+        android:fadeScrollbars="false"
+        android:text="4"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@id/button1"/>
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/RectButtons"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:text="5"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:layout_constraintBottom_toTopOf="@id/button2"
+        app:layout_constraintLeft_toRightOf="@id/button4"/>
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/RectButtons"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:text="6"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDivide"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:layout_constraintBottom_toTopOf="@id/button3"
+        app:layout_constraintLeft_toRightOf="@id/button5"/>
+
+    <Button
+        android:id="@+id/buttonSub"
+        style="@style/RectButtons"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:text="-"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDivide"
+        app:layout_constraintBottom_toTopOf="@id/buttonAdd"
+        app:layout_constraintLeft_toRightOf="@id/button3"/>
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/RectButtons"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="4dp"
+        android:text="1"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@id/button0"/>
 
     <Button
         android:id="@+id/button2"
         style="@style/RectButtons"
-        android:layout_width="99dp"
+        android:layout_width="102dp"
         android:layout_height="100dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="202dp"
-        tools:layout_editor_absoluteY="558dp" />
+        android:text="2"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@id/buttonEquals"
+        app:layout_constraintLeft_toRightOf="@id/button1"/>
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/RectButtons"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:text="3"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSub"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@id/buttonClear"
+        app:layout_constraintLeft_toRightOf="@id/button2"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        style="@style/RectButtons"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:text="+"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSub"
+        app:layout_constraintLeft_toLeftOf="@id/buttonClear"/>
+
+    <Button
+        android:id="@+id/button0"
+        style="@style/RectButtons"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:text="0"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEquals"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/buttonEquals"
+        style="@style/RectButtons"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:text="="
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonClear"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintLeft_toRightOf="@id/button0"/>
+
+    <Button
+        android:id="@+id/buttonClear"
+        style="@style/RectButtons"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:text="C"
+        android:textSize="@dimen/buttonFontSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAdd"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintLeft_toRightOf="@id/buttonEquals"/>
 
     <TextView
         android:id="@+id/answerEditText"
-        android:layout_width="411dp"
-        android:layout_height="80dp"
+        android:layout_width="@dimen/TextViewWidth"
+        android:layout_height="@dimen/TextViewHeight"
         android:background="@color/md_theme_dark_secondary"
         android:ems="10"
         android:hint="Answer"
@@ -171,8 +231,8 @@
 
     <EditText
         android:id="@+id/num2EditText"
-        android:layout_width="411dp"
-        android:layout_height="80dp"
+        android:layout_width="@dimen/EditTextWidth"
+        android:layout_height="@dimen/EditTextHeight"
         android:background="@color/md_theme_dark_onPrimaryContainer"
         android:ems="10"
         android:hint="Enter num 2"
@@ -194,8 +254,8 @@
 
     <EditText
         android:id="@+id/num1EditText"
-        android:layout_width="411dp"
-        android:layout_height="80dp"
+        android:layout_width="@dimen/EditTextWidth"
+        android:layout_height="@dimen/EditTextHeight"
         android:background="@color/md_theme_light_inverseOnSurface"
         android:ems="10"
         android:hint="Enter num 1"

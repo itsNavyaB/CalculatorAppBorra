@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <dimen name="EditTextWidth">411dp</dimen>
+    <dimen name="EditTextHeight">100dp</dimen>
+    <dimen name="TextViewWidth">411dp</dimen>
+    <dimen name="TextViewHeight">100dp</dimen>
+    <dimen name="buttonFontSize">25dp</dimen>
 </resources>
