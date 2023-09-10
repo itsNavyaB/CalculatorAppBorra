@@ -4,5 +4,8 @@
     <dimen name="EditTextHeight">100dp</dimen>
     <dimen name="TextViewWidth">411dp</dimen>
     <dimen name="TextViewHeight">100dp</dimen>
-    <dimen name="buttonFontSize">25dp</dimen>
+    <dimen name="buttonFontSize">25sp</dimen>
+    <dimen name="TextFontSize">20sp</dimen>
+    <dimen name="TextViewPadding">30dp</dimen>
+    <dimen name="Margins">5dp</dimen>
 </resources>
