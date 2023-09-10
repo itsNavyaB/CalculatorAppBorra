@@ -15,8 +15,9 @@
         android:fadeScrollbars="false"
         android:text="x"
         android:textSize="@dimen/buttonFontSize"
+        android:onClick="multiply"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answerEditText"
+        app:layout_constraintTop_toBottomOf="@+id/answerTextView"
         app:layout_constraintBottom_toTopOf="@id/buttonDivide"
         app:layout_constraintLeft_toRightOf="@id/button9"/>
 
@@ -28,6 +29,7 @@
         android:fadeScrollbars="false"
         android:text="/"
         android:textSize="@dimen/buttonFontSize"
+        android:onClick="divide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonMulti"
         app:layout_constraintBottom_toTopOf="@id/buttonSub"
@@ -42,7 +44,7 @@
         android:text="9"
         android:textSize="@dimen/buttonFontSize"
         app:layout_constraintEnd_toStartOf="@+id/buttonMulti"
-        app:layout_constraintTop_toBottomOf="@+id/answerEditText"
+        app:layout_constraintTop_toBottomOf="@+id/answerTextView"
         app:layout_constraintBottom_toTopOf="@id/button6"
         app:layout_constraintLeft_toRightOf="@id/button8"/>
 
@@ -57,7 +59,7 @@
         android:text="8"
         android:textSize="@dimen/buttonFontSize"
         app:layout_constraintEnd_toStartOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/answerEditText"
+        app:layout_constraintTop_toBottomOf="@+id/answerTextView"
         app:layout_constraintBottom_toTopOf="@id/button5"
         app:layout_constraintLeft_toRightOf="@id/button7"/>
 
@@ -72,7 +74,7 @@
         app:layout_constraintEnd_toStartOf="@+id/button8"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answerEditText"
+        app:layout_constraintTop_toBottomOf="@+id/answerTextView"
         app:layout_constraintBottom_toTopOf="@id/button4"/>
 
     <Button
@@ -121,6 +123,7 @@
         android:layout_height="100dp"
         android:text="-"
         android:textSize="@dimen/buttonFontSize"
+        android:onClick="subtract"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonDivide"
         app:layout_constraintBottom_toTopOf="@id/buttonAdd"
@@ -171,6 +174,7 @@
         android:layout_height="100dp"
         android:text="+"
         android:textSize="@dimen/buttonFontSize"
+        android:onClick="add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSub"
@@ -198,6 +202,7 @@
         android:layout_marginTop="4dp"
         android:text="="
         android:textSize="@dimen/buttonFontSize"
+        android:onClick="equals"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonClear"
         app:layout_constraintTop_toBottomOf="@+id/button2"
@@ -211,19 +216,20 @@
         android:layout_marginTop="4dp"
         android:text="C"
         android:textSize="@dimen/buttonFontSize"
+        android:onClick="clear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonAdd"
         app:layout_constraintTop_toBottomOf="@+id/button3"
         app:layout_constraintLeft_toRightOf="@id/buttonEquals"/>
 
     <TextView
-        android:id="@+id/answerEditText"
+        android:id="@+id/answerTextView"
         android:layout_width="@dimen/TextViewWidth"
         android:layout_height="@dimen/TextViewHeight"
         android:background="@color/md_theme_dark_secondary"
         android:ems="10"
         android:hint="Answer"
-        android:inputType="text"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -236,7 +242,7 @@
         android:background="@color/md_theme_dark_onPrimaryContainer"
         android:ems="10"
         android:hint="Enter num 2"
-        android:inputType="text"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -259,7 +265,7 @@
         android:background="@color/md_theme_light_inverseOnSurface"
         android:ems="10"
         android:hint="Enter num 1"
-        android:inputType="text"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
