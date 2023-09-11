@@ -66,10 +66,12 @@ public class MainActivity extends AppCompatActivity {
         answer.setText("");
     }
 
+
     public void numSelected(View v){
         if(v.getId() == R.id.button0){
             Log.i("Borra", "Selected 0");
             input += "0";
+            //num1ET.setText("0");
         }
         else if(v.getId() == R.id.button1){
             Log.i("Borra", "Selected 1");
@@ -107,8 +109,12 @@ public class MainActivity extends AppCompatActivity {
             Log.i("Borra", "Selected 9");
             input += "9";
         }
-        //numInput = Integer.parseInt(input);
-        //num1ET.setText(input);
+        num1ET.setText(input);
     }
+
+//    public void switchScreen(View v){
+//
+//    }
+
 
 }
