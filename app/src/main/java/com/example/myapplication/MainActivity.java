@@ -107,7 +107,8 @@ public class MainActivity extends AppCompatActivity {
             Log.i("Borra", "Selected 9");
             input += "9";
         }
-        numInput = Integer.parseInt(input);
+        //numInput = Integer.parseInt(input);
+        //num1ET.setText(input);
     }
 
 }
