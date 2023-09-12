@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     public EditText num1ET, num2ET;
     double output;
-    String input;
+    //String input;
     int numInput;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void numSelected(View v){
+        answer = findViewById(R.id.answerTextView);
+        String input = "";
         if(v.getId() == R.id.button0){
             Log.i("Borra", "Selected 0");
             input += "0";
@@ -109,12 +112,15 @@ public class MainActivity extends AppCompatActivity {
             Log.i("Borra", "Selected 9");
             input += "9";
         }
-        num1ET.setText(input);
+
     }
 
-//    public void switchScreen(View v){
-//
-//    }
+    public void switchScreen(View v){
+        String message = "Thank you for using this calculator!";
+        Intent intent = new Intent(this, ShowInfoActivity.class);
+        intent.putExtra("MESSAGE", message);
+        startActivity(intent);
+    }
 
 
 }
