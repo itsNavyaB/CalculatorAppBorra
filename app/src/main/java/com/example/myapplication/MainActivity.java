@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -113,6 +114,13 @@ public class MainActivity extends AppCompatActivity {
             input += "9";
         }
 
+    }
+
+    public void type(View v){
+        num1ET = findViewById(R.id.num1EditText);
+        Button btn = findViewById(v.getId());
+        String str = btn.getText().toString();
+        num1ET.setText(str);
     }
 
     public void switchScreen(View v){
