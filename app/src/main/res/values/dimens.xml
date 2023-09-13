@@ -7,5 +7,7 @@
     <dimen name="buttonFontSize">25sp</dimen>
     <dimen name="TextFontSize">20sp</dimen>
     <dimen name="TextViewPadding">30dp</dimen>
-    <dimen name="Margins">5dp</dimen>
+    <dimen name="CalcPadding">15dp</dimen>
+
+
 </resources>
