@@ -8,6 +8,7 @@
     <dimen name="TextFontSize">20sp</dimen>
     <dimen name="TextViewPadding">30dp</dimen>
     <dimen name="CalcPadding">15dp</dimen>
+    <dimen name="Margin">5dp</dimen>
 
 
 </resources>

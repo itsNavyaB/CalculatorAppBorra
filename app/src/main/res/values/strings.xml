@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="EditText">Enter Number</string>
+    <string name="app_name">Calculator App</string>
+    <string name="EditText1">Enter Number 1</string>
+    <string name="EditText2">Enter Number 2</string>
     <string name="Output">Answer</string>
 </resources>
